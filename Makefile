@@ -1,4 +1,4 @@
-FILE=README
+FILE=pub
 PDFTEMPLATE=templates/extended.tex
 BIBLIOGRAPHY=bib/lit.bib
 BIBSTYLE=bib/jos.csl
