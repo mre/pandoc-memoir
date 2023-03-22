@@ -20,14 +20,14 @@
 
 % Fonts
 %\usepackage{lmodern}         % Default
-\usepackage[math]{iwona}
+% \usepackage[math]{iwona}
 %\usepackage{pxfonts}         % Nice font
 %\usepackage{kmath,kerkis}    % Serif font, look nice
 % \usepackage{arev}            % Plain, simple, not TeX-alike
 %\usepackage{lucidabr}
 %\usepackage[sc]{mathpazo}
 %\linespread{1.05}         % Palatino needs more leading (space between lines)
-\usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
 
 %\usepackage[dutch]{babel}
 %\selectlanguage{dutch}
@@ -35,8 +35,8 @@
 
 % Fancy chapter style 
 % from ftp://ftp.dante.de/tex-archive/info/MemoirChapStyles/MemoirChapStyles.pdf
-\usepackage{color,calc,graphicx,soul,fourier}
-\definecolor{nicered}{rgb}{.647,.129,.149}
+\usepackage{color,calc,graphicx}
+\definecolor{niceblue}{rgb}{0.01, 0.28, 1.0}
 \makeatletter
 \newlength\dlf@normtxtw
 \setlength\dlf@normtxtw{\textwidth}
@@ -45,12 +45,12 @@
 \newcommand\feline@chapter@marker[1][4cm]{%
 \sbox\feline@chapter{%
 \resizebox{!}{#1}{\fboxsep=1pt%
-\colorbox{nicered}{\color{white}\bfseries\sffamily\thechapter}%
+\colorbox{niceblue}{\color{white}\bfseries\sffamily\thechapter}%
 }}%
 \rotatebox{90}{%
 \resizebox{%
 \heightof{\usebox{\feline@chapter}}+\depthof{\usebox{\feline@chapter}}}%
-{!}{\scshape\so\@chapapp}}\quad%
+{!}{\@chapapp}}\quad%
 \raisebox{\depthof{\usebox{\feline@chapter}}}{\usebox{\feline@chapter}}%
 }
 \newcommand\feline@chm[1][4cm]{%
@@ -60,7 +60,7 @@
 }}
 \makechapterstyle{daleif1}{
 \renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so}
-\renewcommand\chaptitlefont{\normalfont\huge\bfseries\scshape\color{nicered}}
+\renewcommand\chaptitlefont{\normalfont\huge\bfseries\scshape\color{niceblue}}
 \renewcommand\chapternamenum{}
 \renewcommand\printchaptername{}
 \renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par}
